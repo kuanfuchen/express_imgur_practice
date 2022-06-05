@@ -1,0 +1,108 @@
+{
+	"info": {
+		"_postman_id": "462b8156-7c4a-4b73-a014-0abf5dc45c75",
+		"name": "expressImg_heroku",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5793298"
+	},
+	"item": [
+		{
+			"name": "imgurUpdateAvator",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOWIwZDU5M2IxNTVmNzJjZTJlNzRmNiIsImlhdCI6MTY1NDMyODY2NSwiZXhwIjoxNjU0NzYwNjY1fQ.HxWGVUlNA984AYVnBo1PhalJ2X9YLx3lfjbARDbeAl8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "avatar",
+							"type": "file",
+							"src": "/C:/Users/creaz/OneDrive/桌面/wallpaper1109-2-1.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://whispering-scrubland-93117.herokuapp.com/uploadImg/avatar",
+					"protocol": "https",
+					"host": [
+						"whispering-scrubland-93117",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"uploadImg",
+						"avatar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "imgurUpdate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "https://whispering-scrubland-93117.herokuapp.com/uploadImg",
+					"protocol": "https",
+					"host": [
+						"whispering-scrubland-93117",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"uploadImg"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signUp_your_token",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NTM4MzAxMjMsImV4cCI6MTY1NDI2MjEyM30.6TWPphNdKm9lLQwHxDKTt62zDipjxJyEFjqGbACkZyA",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"token\",\r\n    \"passward\":\"22334444\",\r\n    \"confirmPassward\":\"22334444\",\r\n    \"email\":\"qqq@gmail.com\",\r\n    \"sex\":\"Female\",\r\n    \"photo\":\"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://whispering-scrubland-93117.herokuapp.com/users/sign_up",
+					"protocol": "https",
+					"host": [
+						"whispering-scrubland-93117",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"users",
+						"sign_up"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
